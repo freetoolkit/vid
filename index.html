@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -29,15 +28,72 @@
         .logo {
             max-height: 80px;
         }
+
+        @media (max-width: 630px) {
+
+            .heading {
+                font-size: 25px;
+            }
+
+        }
+
+        @media (max-width: 545px) {
+
+            .heading {
+                font-size: 20px;
+                margin: 15px 0px;
+                line-height: 35px;
+            }
+
+        }
+
+        @media (max-width: 455px) {
+
+            .heading {
+                font-size: 17px;
+                line-height: 25px;
+                margin: 17px 0px;
+            }
+
+        }
+
+        @media (max-width: 455px) {
+
+            .heading {
+                font-size: 13px;
+                line-height: 23px;
+                margin: 5px 0px;
+            }
+
+        }
+
+        .ads {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: gray;
+            color: white;
+            padding: 2px 5px;
+            border-radius: 0px 0px 0px 7px;
+            cursor: pointer;
+        }
+
+        .ads span {
+            font-weight: bold;
+            background: black;
+            padding: 0px 6px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="maindiv h-wfa w-wfa of-hidden">
+    <div class="maindiv h-wfa w-wfa of-hidden" style="max-width: 720px; max-height: 80px;">
         <img class="logo f-left h-initial" src="./mrdownloader.png">
         <div class="heading">Mr. Downloader, Download Youtube Videos For Free With Multiple Download Options</div>
         <button class="fix tryit btnv2 bt-url" url="http://mrdl.orgfree.com/">Try It!</button>
     </div>
+    <div class="ads">ads <span>!</span></div>
     <script src="https://mnzrch.github.io/SkytoSeeTools/SkytoSeeToolsv1.js"></script>
     <script src="https://mnzrch.github.io/SkytoSeeTools/classes.js"></script>
     <script>
@@ -46,6 +102,9 @@
         cls('maindiv').style.maxWidth = ww + 'px';
         cls('maindiv').style.maxHeight = wh + 'px';
     </script>
+
+
+
 </body>
 
 </html>
